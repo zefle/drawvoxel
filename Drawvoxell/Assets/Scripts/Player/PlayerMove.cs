@@ -72,7 +72,6 @@ public class PlayerMove : MonoBehaviour
         index_pos++;
     }
 
-    
     public void AttacksBoss()
     {
         attacking_boss = true;
@@ -87,7 +86,6 @@ public class PlayerMove : MonoBehaviour
             PlayerAnimator.instance.Attack();
             boss_now.SetHp(-2);
             _coutTime = 0;
-            print("attack");
             while (_coutTime<1.5f)
              {
                 _coutTime+=Time.deltaTime;
@@ -114,8 +112,6 @@ public class PlayerMove : MonoBehaviour
 
             if(on_detech_boss!=null)
                 on_detech_boss.Invoke();
-
-                
             AttacksBoss();
         }
     }

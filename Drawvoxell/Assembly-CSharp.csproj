@@ -46,7 +46,6 @@
      <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCalcu.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\RoadParam.cs" />
      <Compile Include="Assets\Scripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\Terrain.cs" />
@@ -631,6 +630,10 @@
       <Project>{906f3147-c801-06d4-c853-6d53a0640036}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{4c4125fa-8f28-b05a-04db-ae55c1cf9296}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{bf929645-f647-924e-3ec6-8ee7a570a1e5}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
@@ -646,10 +649,6 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{8b3eac2c-fb45-a2e6-9d3d-c268c5533ff6}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{4c4125fa-8f28-b05a-04db-ae55c1cf9296}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -26,10 +26,6 @@ public class PlayerAnimator : MonoBehaviour
         m_anim.SetFloat("increase_motion", increase_motion);
         m_anim.SetFloat("hurt_motion", hurt_motion);
 
-        if(Input.GetKeyDown(KeyCode.I))
-            Increase();
-        if(Input.GetKeyDown(KeyCode.H))
-            Hurt();
     }
     public void Idle()  
     {
@@ -56,10 +52,6 @@ public class PlayerAnimator : MonoBehaviour
     }
     IEnumerator IE_BackToIdle()
     {
-        // while (state!=2)
-        // {
-        //      yield break;
-        // }
         yield return new WaitForSeconds(1);
         state=0;
     }

@@ -35,6 +35,5 @@ public class BossAction : MonoBehaviour
     {
         state = 2;
         yield return new WaitForSeconds(1);
-        //Destroy(transform.parent.gameObject);
     }
 }

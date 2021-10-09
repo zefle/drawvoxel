@@ -35,10 +35,6 @@ public class CameraController : MonoBehaviour
                 coutTime+=Time.deltaTime;
             }
         }
-        else
-        {
-
-        }
     }
 
     public void FocusTarget()
